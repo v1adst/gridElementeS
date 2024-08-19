@@ -1,0 +1,51 @@
+body {
+    font-size: 30px;
+    background-color: darkslategrey;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    width: 1080px;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+
+.grid div {
+    background-color: rgb(89, 141, 143);
+    padding: 10px 20px;
+    border: 2px solid #68acaf;
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#one {
+    opacity: 0.5;
+    grid-area: 1 / 1 / 3 / 5;
+}
+
+#two {
+    opacity: 0.5;
+    grid-area: 2 / 3 / 5 / 8;
+}
+
+#three {
+    grid-area: 1 / 5 / 1 / 7;
+}
+
+#five {
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+#six {
+    grid-area: 4 / 1 / 5 / 3;
+}
+
+#seven {
+    grid-area: 5 / 1 / 6 / 3;
+}
